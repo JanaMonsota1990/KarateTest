@@ -1,18 +1,18 @@
-12:30:09.793 karate.env system property was:  
-12:30:10.229 request:
+18:10:01.864 karate.env system property was:  
+18:10:02.310 request:
 1 > GET https://api.nasa.gov/planetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2e26VZhf
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: api.nasa.gov
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.2)
 
-12:30:11.014 response time in milliseconds: 782.10
+18:10:04.350 response time in milliseconds: 2037.41
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 0
+1 < Age: 2
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 26 Feb 2020 15:30:09 GMT
+1 < Date: Wed, 26 Feb 2020 21:10:04 GMT
 1 < Server: openresty
 1 < Strict-Transport-Security: max-age=31536000; preload
 1 < Transfer-Encoding: chunked
@@ -21,12 +21,11 @@
 1 < X-Cache: MISS
 1 < X-RateLimit-Limit: 1000
 1 < X-RateLimit-Remaining: 997
-{"date":"2020-02-26","explanation":"This hot jupiter is doomed.  Hot jupiters are giant planets like Jupiter that orbit much closer to their parent stars than Mercury does to our Sun.  But some hot jupiters are more extreme than others.  NGTS-10b, illustrated generically, is the closest and fastest-orbiting giant planet yet discovered, circling its home star in only 18 hours.  NGTS-10b is a little larger than Jupiter, but it orbits less than two times the diameter of its parent star away from the star\u2019s surface.  When a planet orbits this close, it is expected to spiral inward, pulled down by tidal forces to be eventually ripped apart by the star\u2019s gravity.  NGTS-10b, discovered by researchers at the University of Warwick, is named after the ESO\u2019s Next Generation Transit Survey, which detected the imperiled planet when it passed in front of its star, blocking some of the light.  Although the violent demise of NGTS-10b will happen eventually, we don't yet know when.","hdurl":"https://apod.nasa.gov/apod/image/2002/HotJupiter_ESACarreau_2500.jpg","media_type":"image","service_version":"v1","title":"NGST-10b: Discovery of a Doomed Planet","url":"https://apod.nasa.gov/apod/image/2002/HotJupiter_ESACarreau_960.jpg"}
+{"date":"2020-02-26","explanation":"This hot jupiter is doomed.  Hot jupiters are giant planets like Jupiter that orbit much closer to their parent stars than Mercury does to our Sun.  But some hot jupiters are more extreme than others.  NGTS-10b, illustrated generically, is the closest and fastest-orbiting giant planet yet discovered, circling its home star in only 18 hours.  NGTS-10b is a little larger than Jupiter, but it orbits less than two times the diameter of its parent star away from the star\u2019s surface.  When a planet orbits this close, it is expected to spiral inward, pulled down by tidal forces to be eventually ripped apart by the star\u2019s gravity.  NGTS-10b, discovered by researchers at the University of Warwick, is named after the Next Generation Transit Survey, which detected the imperiled planet when it passed in front of its star, blocking some of the light.  Although the violent demise of NGTS-10b will happen eventually, we don't yet know when.","hdurl":"https://apod.nasa.gov/apod/image/2002/HotJupiter_ESACarreau_2500.jpg","media_type":"image","service_version":"v1","title":"NGTS-10b: Discovery of a Doomed Planet","url":"https://apod.nasa.gov/apod/image/2002/HotJupiter_ESACarreau_960.jpg"}
 
 
-12:30:11.022 karate.env system property was:  
-12:30:11.026 request:
-1 > GET https://api.nasa.gov/planetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2ef
+18:09:39.835 assertion failed: path: $.date, actual: '2020-02-26', expected: '2020/02/26', reason: not equal
+lanetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2ef
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: api.nasa.gov

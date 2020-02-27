@@ -1,15 +1,9 @@
-<testsuite failures="0" name="src/test/java/examples/nasaFreeApi/nasaTest.feature" skipped="0" tests="2" time="1.753421">
-  <testcase classname="src.test.java.examples.nasaFreeApi.nasaTest" name="get 200 status" time="1.163835">
-    <system-out>Given url 'https://api.nasa.gov/planetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2e26VZhf' . passed
-When method get ........................................................... passed
-Then status 200 ........................................................... passed</system-out>
-  </testcase>
-  <testcase classname="src.test.java.examples.nasaFreeApi.nasaTest" name="get 403 forbidden error" time="0.589587">
+<testsuite failures="0" name="src/test/java/examples/nasaFreeApi/nasaTest.feature" skipped="0" tests="1" time="2.46903">
+  <testcase classname="src.test.java.examples.nasaFreeApi.nasaTest" name="verify json date field" time="2.46903">
     <system-out>Given url 'https://api.nasa.gov/planetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2e26VZhf' . passed
 When method get ........................................................... passed
 Then status 200 ........................................................... passed
-Given url 'https://api.nasa.gov/planetary/apod?api_key=waSCLMWEDEpIqclfyEBjYZMHZh3TzPsE2ef' . passed
-When method get ........................................................... passed
-Then status 403 ........................................................... passed</system-out>
+* def getDate = ........................................................... passed
+And match response.date == getDate() ...................................... passed</system-out>
   </testcase>
 </testsuite>
